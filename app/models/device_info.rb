@@ -1,11 +1,7 @@
 class DeviceInfo < ApplicationRecord
-
   enum :device_type, [:android, :ios]
-
     belongs_to :user
-
     delegate :email,to: :user
-
     def self.send_notification(tokens, payload, device_type='android')
       messenger = PushMessenger::Gcm.new
       begin

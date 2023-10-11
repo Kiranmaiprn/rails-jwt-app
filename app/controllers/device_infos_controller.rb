@@ -1,5 +1,5 @@
 class DeviceInfosController < ApplicationController
-  before_action :print_value
+  before_action :print_value 
   
   # skip_callback(:create, :before, :print_value)
   # set_callback(:create, :before, :print_value)
