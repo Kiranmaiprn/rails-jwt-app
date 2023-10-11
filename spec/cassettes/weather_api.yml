@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=3478149057ae5f6f761c232781845530&q=Hyderabad
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 10 Oct 2023 08:39:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '464'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?q=hyderabad"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":78.4744,"lat":17.3753},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50d"}],"base":"stations","main":{"temp":304.38,"feels_like":305.75,"temp_min":304.38,"temp_max":305.88,"pressure":1014,"humidity":48},"visibility":6000,"wind":{"speed":2.57,"deg":70},"clouds":{"all":40},"dt":1696926563,"sys":{"type":1,"id":9214,"country":"IN","sunrise":1696898263,"sunset":1696940912},"timezone":19800,"id":1269843,"name":"Hyderabad","cod":200}'
+  recorded_at: Tue, 10 Oct 2023 08:39:13 GMT
+recorded_with: VCR 6.2.0
